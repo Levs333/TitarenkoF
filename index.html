@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spase Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="ufo-icon"></div>
+        <div class="logo">spase cafe</div>
+        <div class="header-content">
+            <div class="header-text">Затишна локація, надихаюча на польоти до зірок, де кожен напій — це подорож!</div>
+            <img class="header-image" src="https://learn.logikaschool.com/uploads/student/4826454/6839e227c9857.png " alt="Header Image"/>
+        </div>
+        <div class="button-container">
+            <div class="button-about" onclick="scrollToSection('about-section')">
+                <span class="button-about-text">про нас</span>
+            </div>
+            <div class="button-menu" onclick="scrollToSection('menu-title')">
+                <span class="button-menu-text">меню</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu-title" class="menu-title">МЕНЮ</div>
+    <div class="menu-item espresso">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATDxIQEhAQEBAQDw4PEBAPDw8PDw8QFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NFQ8QFi0eFRkrLS8tKy8tLTcxKys0LSs3LSstKy0tLS0rKzMtKzcrKystKystKy0tKy0tLSstLi0rK//AABEIALcBEwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQMEAgUGB//EADkQAAIBAgQDBAgEBgMBAAAAAAABAgMRBCExUQUSQWFxgZETIjJCUqGx0QYUM/AVQ3KCweFikvEj/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAEDAgQF/8QAIREBAQADAAEEAwEAAAAAAAAAAAECAxFBEiExUQQTcTL/2gAMAwEAAhEDEQA/AP3EAAAAAAAAAAAAAAAAEcxxKoBYDPLEpdSmWNROxeNwPNlj0cviI9UOV6gPLXEkWw4hHcdhxvBRDEplqmio6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmUgJlKxVOocVZ2PJ4hxJR9WPrT26LtZns2TCdrrHC5X2ehVxFuxHnV+Ix6Xk9LRzPMnUlJ3qSbXwrKPZkdPGJZKyt0SPFl+X34ejHR9tM8RVekVH+p5+SKqjq/HFX7Hf6mb8zJkSnLt7zC/kW+a1mqOpqpn67+RRJVek35Ilzlt9TqNRrVGf7cvt16IzPE11s/kcfxaovapvwd/E2OaZCUews3ZzyXDH6UUePRTz5od6dvPQ9bC8Ze6kt0eLjKMJK1kzzZ4KUM6cnHsTuvFG+H5dn+meWmX4fouD4jGXXPY9CMrn5dguLyTtP1ZLR9Gfc8E4l6SP/Ja9vae/Xtmfw82eFxe0CIsk1ZgAAAAAAAAAAAAAAAAAAAAAAABnpTuubfPwL56PuZ5/CqqlSW9rAeZxjiEk+SHtS1fwo8lRtnn9WW8rdarzaqfL4JW/feHG8rHx9tyzytr365McVc3fQsw+E6y/2boUVa+xN1uSap5dXJSopaIn0LexeraPzZYomk1xxcmKWGOHhje4LdhUy/qh63myolUqD6HsOCOZ01/4c3TFmbxZ0fMocMme7OgrXPPr0UmZ3VY7mXXg47CRlFprexZ+DuIuFf0Um7rJN9YvQ3Vqd0727jz+BcLlV4jTcf06UXKq1ol0j3tryub6Jccoz28uL9PgdlUnmu8tPpvCAAAAAAAAAAAAAAAAAEASQAAJIAEnzWExPoq0qbyXM7dmZ9KfNfiPC/8A0517yXmsvsWDfjsCqnrwsp2s9pr7njRpuM7SVnpmjvAcTlCyea36nsqrSqxzs+3RrxPPs0TL3ny1w22e1+HkVKPVEQpvu+jN9bhT/l1NOksn5rUzxoVo+1B96XMvkea6rPDeZy+VcrkQk97CeJgnnF3IeKp9v1RzyKvs+jXh1IXMZ/zcf3c6eLW6L7HKvV+pE6qWrMU8U31SO6WHnLSMpeDa89C8t+Dk8u3iL6ab7mevM9Glwmq9eWmu+7+RvocKpRzl67/5Wt5GmOnKubsxj57DcPq1n6qcYdZyTUV3bn0nDsBToU+WC1d5SftTluy6eIisl8tDNUqtm+GExYZ7Ll/F1KfNU7EmbTHgI6vwNhqzAAAAAAAAAAAAAAAAQAAAAAA5nNJXZhrYpvTJAa6ldLtZi4kuaF30z7kcJlsEmmno1YD5urSsZZylF3i2ehiIOMnF9GZakSi7DcZnHXM9Gj+II9U0fP8AKQ4InB9bHilKWri+xq51zYZ+5Tf9sfsfHej2OlzbslxXr69U8N8EPJEqGGXuU/8ArE+TjOW78yyMpbk9M+j1X7fVrFUY6KK7kkcz4pDpmfNxb3LIyKj2Z8T2KJYqT6mCMixSA106l2ehRpZHiTxCi8zfDi8EktSD0lS2dvAtipLqmYaHE6cupujK+hR2pHRWyFUs7PwKLQEAAAAAAAAAAAAgAMAcVqiirkylZXPOxFS7KOatVyZWQ2VykBZzHUahm5hzgccShe0vBnmyR6rd1bc82cLOwRRKJw0XyRU0BxYhHdiB1RHcThHaIO4naRUjtEFqO4SzK0V1Z2i92BlxFXmn2XL8PTTlZ5rbcz0I5OW57XAsLd8z6Z+IGz+C0nFZOEraxlK6fjkZ6VWrh5qE3zU5P1Z/4ezPcZlx+GU6Uo9bNx7JLRgao1E1ddTiqeXwfF81NX1RvU7gaKNToXoxI1Up3RRYAAAAAAAAAAIIJICM+Innbb6mGZqWavu2/mUTiVWeRVIukiuaKKmRcNEJFkRKOMVRy5ttfuXxR32F4PJscSiX1YWlby7iHE4qsziRY0OBzyHIpsdJFqgSqYFaR2kWxpjkA5ehjr5tI3YjJJeJjgs7gWuloj6Dg/stdx51CmpZ3S7zVSrqLTt03A9exViqqhCU37sW+92yRhxHFl7q8zxsfjZTyby2KI4VU5Uz3cDeV5eR5HCsFKb2j1fQ+kp01FJLRAcNFlEhomCA0RZJzE6AAAAAAAAAgiX+CSGBmoL1F3HFSIpL1ZR6xk14JnUHdW6lGScSmaN04GWpAqM7RyWSiVyR0Fw2cMhsorxrVk+qdvPoUQkZ/wAQyao3XxJ+RVw7FqcFLdZ9/U4yHo2HKcRkWJnCigdRgSjuJBCiQo5lhygMuLedkUqJshRu82ejhcJC+ef0A8mg59It9ybL3RrS0py8Vb6n0MWumXcSmXg+fjwivLXlgu13fkjZheBU45zbm+3JHq3BREYpKySSXRZIg6AHIpvMib6HdKPUCyOp0cU9zsAAAAAAAAAQSQBixHqVFL3Z+q/6uny+h1Ujt4F2IpKcXF6PzXajFhqru6U8px0fSS6SRRoi7rtK6kDpp+J3GV+/YDDOBROJ6VSmZp0y9R58kVTNtSmUOmXo83HLmhyvc+X9LPDVLtN0ZO7az5XufY16fQyVMGpJppNPozm0U4XGwmk4yTT6p5G2Ezwqv4bablQqSpN58usG+4mnDHQdpU41F8VOVm/7X9zlX0KkdKR41LHVfeoVo/2X+hohjJvSlV/6NfUg9PmOKtVJZsxr8xLSlyreckreC1JfB3P9WpzL4Iq0X+/ECMNxBTnaOaWrWj7vue/hai8TBQwUIK0YpIvhGwHqRkdqRkpyL4yOhcdHEWdpASkRNkSnscJNgSlcsk+i1OZSUV+8zqlHq9X8lsBYkSAAAAAAAAAAIJAHJmx2E9IlZ8s45wlt2PsNRDKPLw2Mz9HUXLUXk+1bo0zgTjcFCqrSWa9mSylF9jPLeIrYd2qr0lLpVitP6l0A9SFTfz+51KBRRrwqK8JJ+JYk11t9GOiupRM1aFkb/Sbq3as0cYmmnG66ZgeU6Y9F2GnkJ5DkZlSOlTL+Q6UCChUzrkLlEnlAp5CeQusLAUqB0oFlibAc01nY1QgVUUr3fQuc33LtOh3ktTiVR9MvqQo+PedSairt+YCMBUqqPe9EtWULESnlTWXxv2V3bmmhh1HO/NLrJ6+GyAUqbvzS16LpH/ZcgAJAAAAAAAAAAAAACGiQBwGr5PNPfM6sQyjx8VwON+ejJ0Z62WcH4dDN+fr0sq1NuPxwXNH/AEe+yGgPOw3EqU/Zkk9r/wCGakk9vB2M+K4PQnny8r+KHqsxS4TXh+lWuukZ/cg3Sh2EWMLxOLh7VLmW8HchcdjpOnKPfEnB6FhYyR4zQfW3ei2PEaD99eYF6BUsdR+OPmT+eo/GvMgtIKXxKgveX1OHxmitLvuTKNJ2qb2MP8Yb9ilJ+B0qmKnpFQXaOD0Ixtq0imtjaUNZXeyzZnjwucv1Ksn2RyRsw+ApQ0ir7vNl4MyxVWp+nT5V8c8kW0uH53qSdR7PKC8DcSgIiuh0CQIJAAAAAAAAAAAAAAAAAAEMADlnIBRAAKBEoJ6pPvSYAFFTh9F604eSRTLg2Hf8tebAIjl8Dw/wfNkrgmH+D5sAC2PC6C/loujhqa0hFeCAAsS2yJACh1YgAdWJAIJAAAAAAAAAAAAAf//Z" alt="Espresso " alt="Espresso">
+        <div class="description">
+            <p class="title">експресо</p>
+            <p class="desc1">це міцна чорна кава,</p>
+            <p class="desc2">приготована шляхом швидкого</p>
+            <p class="desc3">пропускання гарячої води під</p>
+            <p class="desc4">тиском через мелену каву.</p>
+            <p class="price">Ціна 20грн</p>
+        </div>
+    </div>
+    <div class="menu-item americano">
+        <img src="data:image/jpeg;base64,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 " alt="Americano">
+        <div class="description">
+            <p class="title">американо</p>
+            <p class="desc1">еспресо, розбавлений</p>
+            <p class="desc2">гарячою водою.</p>
+            <p class="desc3">Має м'якший смак, ніж еспресо.</p>
+            <p class="price">Ціна 18грн</p>
+        </div>
+    </div>
+    <div class="menu-item latte">
+        <img src="data:image/jpeg;base64,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" alt="Latte">
+        <div class="description">
+            <p class="title">лате</p>
+            <p class="desc1">еспресо та великої кількості</p>
+            <p class="desc2">молока, зазвичай зі збитою</p>
+            <p class="desc3">пінкою зверху.</p>
+            <p class="price">Ціна 20</p>
+        </div>
+    </div>
+    <div class="menu-item romano">
+        <img src="data:image/jpeg;base64,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 " alt="Latte">
+        <div class="description">
+            <p class="title">лате</p>
+            <p class="desc1">еспресо з великою кількістю</p>
+            <p class="desc2">молока та пінки зверху.</p>
+            <p class="price">Ціна 20грн</p>
+        </div>
+    </div>
+    <div class="menu-item romano">
+        <img src="https://prontopizza.ua/uzhhorod/wp-content/uploads/sites/12/2024/01/raf-kava-500x500.webp " alt="Romano">
+        <div class="description">
+            <p class="title">романо</p>
+            <p class="desc1">еспресо з додаванням</p>
+            <p class="desc2">соку лимона для</p>
+            <p class="desc3">освіжаючого смаку.</p>
+            <p class="price">Ціна 25грн</p>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about-title">Про нас</div>
+    <div id="about-section" class="about-section">
+        <div class="about-text">
+            Космічне кафе — це тематичний заклад, натхненний ідеєю космосу та міжгалактичних подорожей. Інтер’єр оформлений у стилі зоряного неба, планет, шатлів і неону, створюючи атмосферу майбутнього або фантастичного всесвіту. У меню — незвичайні напої з креативними назвами (наприклад, «Молочний Місяць» чи «Чорна діра»), страви з космічним дизайном, а також оригінальна подача в «астро-посуді». Таке кафе — не лише місце для перекусу, а й вражаючий візуальний і гастрономічний досвід, особливо популярне серед дітей, молоді та фанатів наукової фантастики.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-address">
+                місто Львів<br>вул. Богдана Хмельницького 14
+            </div>
+            <div class="footer-ufo"></div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
